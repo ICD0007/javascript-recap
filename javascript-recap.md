@@ -13,6 +13,17 @@ function updateName() {
 }
 ```
 
+* Use javascript to manipulate element
+
+```javascript
+  // get/set value of element text
+  var value = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML = "Hello JavaScript";
+  
+  // set element style
+  document.getElementById("demo").style.fontSize = "35px";
+```
+
 #### What is a variable?
 
 * A variable is a container for a value, like a number we might use in a sum ...
@@ -84,6 +95,15 @@ function updateName() {
     alert('Hello John, nice to see you!');
   } else if (name === 'Chris') {
     alert('Hello Chris, nice to see you!');
+  }
+```
+
+#### Looping
+
+```javascript
+  var sequence = [1, 1, 2, 3, 5, 8, 13];
+  for (var i = 0; i < sequence.length; i++) {
+    console.log(sequence[i]);
   }
 ```
 
@@ -163,9 +183,67 @@ function updateName() {
 
 
 ### Jquery
+
+* Link jquery to your project `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>`
+
+#### Basic syntax is: `$(selector).action()`
+
+```javascript
+  $(this).hide() - hides the current element.
+
+  $("p").hide() - hides all <p> elements.
+
+  $(".test").hide() - hides all elements with class="test".
+
+  $("#test").hide() - hides the element with id="test".
+```
+
+#### The Document Ready Event
+
+```javascript
+  $(document).ready(function(){
+
+   // jQuery methods go here...
+
+  });
+  
+  //or this
+  $(function(){
+
+   // jQuery methods go here...
+
+  });
+  
+  // sample code
+  $(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide();
+    });
+  });
+```
+
 ```html
-<div id="divTest1"></div>
-<script type="text/javascript">
-$("#divTest1").text("Hello, world!");
-</script>
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $("button").click(function(){
+          $("p").hide();
+      });
+  });
+  </script>
+  </head>
+  <body>
+
+  <h2>This is a heading</h2>
+
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+
+  <button>Click me to hide paragraphs</button>
+
+  </body>
+  </html>
 ```
