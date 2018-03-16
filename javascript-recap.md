@@ -297,3 +297,11 @@ function updateName() {
       });
   });
 ```
+
+#### Further readings
+
+* https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+
+* https://www.w3schools.com/js/default.asp
+
+* https://www.w3schools.com/jquery/default.asp
