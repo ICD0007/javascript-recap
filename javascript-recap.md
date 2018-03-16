@@ -187,11 +187,37 @@ function updateName() {
 ```
 
 ```javascript
-  //main.js
-  function handleFormSubmit() {
-     alert('About to submit');
-     console.log('About to submit');
-  }
+  //js/main.js
+  function handleSubmit()
+  {
+    // Variable declaration  
+    var email;
+    var name;
+    var message;
+    
+    // Get user inputs
+    email = document.getElementById('email').value;
+    name = document.getElementById('name').value;
+    message = document.getElementById('message').value;
+
+    // Check if user filled all input fields
+    if (email == '' || name == '' || message == '') {
+        alert('Kindly, fill all input field');
+        return;
+    }
+
+    // Alert the user about the entered email
+    alert('Hello your email is: ' + email);
+
+    // Print name and message to browser console
+    console.log(name);
+    console.log(message);
+
+    // Create userInfo Object from entered values
+    var userInfo = {userName : name, userEmail: email, userMessage: message};
+    console.log(userInfo);
+}
+
 ```
 
 
