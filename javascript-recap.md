@@ -180,7 +180,11 @@ function updateName() {
 
 * Inside this folder `js`, create the javascript file `main.js` that will contain your javascript codes
 
-* Then add the reference to your `index.html` like this - `<script src="js/main.js" type="text/javascript"></script>`
+* Then add the reference to your `index.html` just before the body closing.
+
+```html
+  <script src="js/main.js" type="text/javascript"></script>
+```
 
 ```javascript
   //main.js
