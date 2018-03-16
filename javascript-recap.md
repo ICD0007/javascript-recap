@@ -29,7 +29,7 @@ function updateName() {
 * A variable is a container for a value, like a number we might use in a sum ...
 
 ```javascript
-  var email = document.getElementById('name');
+  var name = document.getElementById('name');
 
   alert('Hello ' + name + ', nice to see you!');
 ```
