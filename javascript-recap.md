@@ -66,7 +66,13 @@ function updateName() {
   console.log(person.age) // 40
 ```
 
-#### Arithmetic operators
+![Alt text](https://github.com/ICD0007/javascript-recap/blob/master/operators.png "operators")
+
+#### Comparison operators
+
+* Sometimes we will want to run true/false tests, then act accordingly depending on the result of that test — to do this we use comparison operators.
+
+![Alt text](https://github.com/ICD0007/javascript-recap/blob/master/comparison_operators.png "Comparison operators")
 
 #### Condition statement
 ```javascript
