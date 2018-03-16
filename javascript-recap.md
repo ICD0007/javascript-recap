@@ -107,6 +107,15 @@ function updateName() {
   }
 ```
 
+#### JavaScript Events
+
+* HTML events are "things" that happen to HTML elements.
+
+```javascript
+  <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+```
+(Comprehensive list here)[https://www.w3schools.com/jsref/dom_obj_event.asp]
+
 #### Project structure
 * Create project folder `e.g. javascript-recap`
 
