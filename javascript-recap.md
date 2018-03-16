@@ -180,14 +180,22 @@ function updateName() {
 
 * Inside this folder `js`, create the javascript file `main.js` that will contain your javascript codes
 
-* Then add the reference to your `index.html` just before the body closing.
+* Then add the reference to your `main.js` just before the body tag closing.
 
 ```html
   <script src="js/main.js" type="text/javascript"></script>
 ```
 
+#### Add click event to `Submit button`
+
+* So the submit buttton in your form looks this
+
+      `<input class="button" onclick="handleSubmit()" type="button" value="Submit">`
+
+* So, when user clicks the button to submit the form, the function `handleSubmit()` in your `main.js` below would be triggered.
+
 ```javascript
-  //js/main.js
+  // js/main.js
   function handleSubmit()
   {
     // Variable declaration  
@@ -221,7 +229,7 @@ function updateName() {
 ```
 
 
-### Jquery
+## Jquery
 
 * Link jquery to your project `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>`
 
