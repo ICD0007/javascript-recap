@@ -229,6 +229,16 @@ function updateName() {
         $("p").hide();
     });
   });
+  
+  // get element text
+  $("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  
+  // get element html
+  $("#btn2").click(function(){
+      alert("HTML: " + $("#test").html());
+  });
 ```
 
 ```html
