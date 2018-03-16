@@ -116,7 +116,7 @@ function updateName() {
 ```
 (Comprehensive list here)[https://www.w3schools.com/jsref/dom_obj_event.asp]
 
-#### Project structure
+### Project structure
 * Create project folder `e.g. javascript-recap`
 
 * Create `index.html` and put the html content below
@@ -173,6 +173,9 @@ function updateName() {
 </body>
 </html>
 ```
+
+#### Link the `style.css` located in this repo [style.css](https://github.com/ICD0007/javascript-recap/blob/master/css/style.css)
+
 
 #### Link javascript code inside the `head` block
 
